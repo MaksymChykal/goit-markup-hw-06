@@ -932,6 +932,41 @@ a {
   li.customers-item  a:focus .company {
     fill:var(--accent-color); 
 } 
+ .subscribe {
+    display: flex;
+ }
+ .subscribe-input {
+    min-width: 358px;
+    padding: 15px 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+ }
+ .subscribe-button {
+    display: flex;
+    min-width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8755;
+    background-color: var(--accent-color) ;
+    color: var(--primary-bcg-color);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+ }
+ .icon-icon-send {
+    fill: currentColor;
+    padding-left: 10px;
+ }
 .portfolio-thumb {
     position: relative;
     overflow: hidden;
