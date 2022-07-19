@@ -388,7 +388,7 @@ margin-bottom: 50px;
     border-radius: 50%;
     color: #AFB1B8;
     cursor: pointer;
-    transition: 250ms var(--timing-function);
+    transition:  250ms var(--timing-function);
 }
 .social-item .link:hover,
 .social-item .link:focus {
@@ -1005,6 +1005,37 @@ a {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+}
+.form-title {
+    display: inline-block;
+    padding-bottom: 12px;
+}
+.form-label {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--title-text-color);
+    padding: 0;
+    margin-bottom: 4px;
+
+}
+.form-place {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form-input {
+    width: 100%;
+    min-height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 44px;
+    outline: none;
+    color: var(--primary-text-color);
+    transition: 250ms var(--timing-function);
+    
+
 }
 .modal {
     width: 528px;
