@@ -206,9 +206,9 @@ a.number:focus {
 }
 .container-footer 
 {
-    width: 1200px;
+    /* width: 1200px; */
     display: flex;
-    justify-content: space-between;
+    
     align-items: baseline;
     margin: 0 auto;
     padding-left: 15px;
@@ -934,7 +934,22 @@ a {
     fill:var(--accent-color); 
 } 
  .subscribe {
-    display: flex;
+    padding-left: 93px;
+
+ }
+ .subscribe-title {
+    width: 219px;
+    height: 16px;
+    left: 815px;
+    top: 2751px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 
  }
  .subscribe-input {
@@ -1008,7 +1023,7 @@ a {
     opacity: 0;
     pointer-events: none;
 }
-.input-icon {
+.icon-input {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -1016,12 +1031,24 @@ a {
     display: inline-block;
     transition: fill 250ms var(--timing-function);
 }
-.input-icon:focus {
+.form-lines:focus-within > .icon-input {
     fill: var(--accent-color);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 448px;
+    text-align: left;
+    padding: 0;
 }
 .form-title {
     display: inline-block;
     padding-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
 }
 .form-label {
     display: block;
@@ -1033,7 +1060,7 @@ a {
     margin-bottom: 4px;
 
 }
-.form-place {
+.form-lines {
     position: relative;
     width: 100%;
     margin-bottom: 10px;
@@ -1043,14 +1070,17 @@ a {
     min-height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-left: 44px;
+    padding-left: 42px;
     outline: none;
     color: var(--primary-text-color);
     transition: 250ms var(--timing-function);
-    
-
 }
-.form-place .coment {
+.form-input:focus-within,
+.form-lines area:focus-within {
+    border: 1px solid var(--accent-color);
+}
+
+.form-coment {
     display: block;
     width: 100%;
     min-height: 120px;
@@ -1119,9 +1149,21 @@ a {
     /* padding: 8px 10px; */
     background-color: var(--primary-bcg-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    left: 490px;
-    top: 8px;
     right: 8px;
-    bottom: 543px;
+    top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    color: #000;
     cursor: pointer;
+    background-color: inherit;
+    transition: color 250ms var(--accent-color);
+}
+.modal-button:hover,
+.modal-button:focus {
+    color: var(--accent-color);
 }
