@@ -1104,7 +1104,7 @@ a {
     outline: none;
     resize: none;
 }
-.textarea::placeholder {
+.form-textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
     font-weight: 400;
     font-size: 14px;
@@ -1120,12 +1120,12 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    color: var(--primary-text-color);
+    color: #757575;
 }
 .form-agreement-link {
     color: var(--accent-color);
     text-decoration: underline;
-    margin-left: 2px;
+    margin-left: 5px;
 }
 .sub-button {
     background: #2196F3;
