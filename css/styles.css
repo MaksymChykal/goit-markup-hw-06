@@ -1000,8 +1000,9 @@ a {
     padding: 63px 24px;
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
-    transition: 250ms var(--timing-function);
+    transition:  250ms var(--timing-function);
 }
+
 .text-thumb {
     font-family: inherit;
     font-weight: 400;
@@ -1037,10 +1038,12 @@ a {
 .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     width: 448px;
     text-align: left;
     padding: 0;
+    margin-left: 40px;
+    margin-top: 40px;
 }
 .form-title {
     display: inline-block;
@@ -1055,10 +1058,19 @@ a {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: var(--title-text-color);
+    color:#757575;
     padding: 0;
     margin-bottom: 4px;
 
+}
+.form-name {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color:#757575;
+    padding: 0;
+    margin-bottom: 4px;
 }
 .form-lines {
     position: relative;
@@ -1090,8 +1102,9 @@ a {
     padding: 12px 16px;
     transition: border 250ms var(--timing-function);
     outline: none;
+    resize: none;
 }
-.form-input::placeholder {
+.textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
     font-weight: 400;
     font-size: 14px;
@@ -1123,6 +1136,18 @@ a {
     height: 50px;
     left: 700px;
     top: 712px;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+}
+.sub-button:hover {
+    color: #000;
+}
+.sub-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
 }
 .modal {
     width: 528px;
