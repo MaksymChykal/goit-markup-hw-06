@@ -1071,6 +1071,9 @@ a {
     color:#757575;
     padding: 0;
     margin-bottom: 4px;
+    font-weight: 400;
+    font-family: inherit;
+    
 }
 .form-lines {
     position: relative;
@@ -1092,25 +1095,25 @@ a {
     border: 1px solid var(--accent-color);
 }
 
-.form-coment {
+.form-input-textarea {
     display: block;
     width: 100%;
     min-height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    color: var(--primary-text-color);
+    /* color: var(--primary-text-color); */
+    color: #757575;
     padding: 12px 16px;
     transition: border 250ms var(--timing-function);
     outline: none;
     resize: none;
 }
-.form-textarea::placeholder {
+.form-input-textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.01em;
-
 }
 .checkbox-label {
     position: relative;
@@ -1127,21 +1130,44 @@ a {
     text-decoration: underline;
     margin-left: 5px;
 }
+.checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+}
+.checkbox:checked + .checkbox-icon {
+    border-color: transparent;
+    background-image: url(../images/check.svg);  
+    background-color: var(--accent-color);
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+}
+
 .sub-button {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
     width: 200px;
     height: 50px;
     left: 700px;
     top: 712px;
     color: #FFFFFF;
-    font-weight: 700;
     cursor: pointer;
 }
 .sub-button:hover {
     color: #000;
+}
+.subsribe-client {
+    vertical-align: middle;
 }
 .sub-btn {
     display: flex;
@@ -1164,8 +1190,8 @@ a {
 }
 .modal-icon {
     
-    width: 11px;
-    height: 11px;
+    width: 18px;
+    height: 18px;
     fill: currentColor;
 }
 .modal-button {
@@ -1186,7 +1212,7 @@ a {
     color: #000;
     cursor: pointer;
     background-color: inherit;
-    transition: color 250ms var(--accent-color);
+    transition: color 250ms var(--timing-function);
 }
 .modal-button:hover,
 .modal-button:focus {
